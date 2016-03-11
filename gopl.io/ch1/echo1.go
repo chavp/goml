@@ -14,6 +14,5 @@ func main() {
         sep = " "
     }
     fmt.Println(s)
-    end := time.Now()
-    fmt.Printf("elasped time: %v", end.Sub(start))
+    fmt.Printf("%.2fs elaspsed", time.Since(start).Seconds())
 }
